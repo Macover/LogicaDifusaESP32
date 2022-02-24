@@ -20,11 +20,15 @@ namespace LogicaDifusaGra
         {
             InitializeComponent();            
         }
+        Form2 form;
         logicaDifusa[] valoresL;
         bool consultaApiBool = false;
 
         private void btnGraficar_Click(object sender, EventArgs e)
         {
+            form = new Form2();
+            form.Show();
+
             hScrollBar1.Enabled = true;                   
             btnGraficar.Enabled = false;
             btnActualizar.Enabled = true;
@@ -144,7 +148,24 @@ namespace LogicaDifusaGra
         }
         private void f(object sender, KeyPressEventArgs e)
         {
+            //comentario prueba
             consultarAPIESP();
+        }
+
+        private void hScrollBar2_Scroll(object sender, ScrollEventArgs e)
+        {
+            double x = hScrollBar1.Value;
+
+            double[] yA = new double[4];
+
+            grafica.Series[4].Color = Color.GreenYellow;
+            grafica.Series[4].Points.Clear();
+
+            for (int i = 0; i < 5; i++)
+            {
+                grafica.Series[4].Points.AddXY(x, 1.5);
+                grafica.Series[4].Points.AddXY(x, 0);
+            }
         }
     }
 }

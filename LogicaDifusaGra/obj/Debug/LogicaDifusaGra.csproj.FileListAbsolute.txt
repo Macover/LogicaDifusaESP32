@@ -50,7 +50,8 @@ C:\Users\Macov\OneDrive - Universidad Politecnica de Tecamac\8voCuatri\Inteligen
 C:\Users\Macov\OneDrive - Universidad Politecnica de Tecamac\8voCuatri\Inteligencia Artificial\2\LogicaDifusaGraficaMicroCon\LogicaDifusaGra\obj\Debug\LogicaDifusaGra.csproj.CoreCompileInputs.cache
 C:\Users\Macov\OneDrive - Universidad Politecnica de Tecamac\8voCuatri\Inteligencia Artificial\2\LogicaDifusaGraficaMicroCon\LogicaDifusaGra\obj\Debug\LogicaDifusaGra.exe
 C:\Users\Macov\OneDrive - Universidad Politecnica de Tecamac\8voCuatri\Inteligencia Artificial\2\LogicaDifusaGraficaMicroCon\LogicaDifusaGra\obj\Debug\LogicaDifusaGra.pdb
-C:\Users\Macov\OneDrive - Universidad Politecnica de Tecamac\8voCuatri\Inteligencia Artificial\2\LogicaDifusaGraficaMicroCon\LogicaDifusaGra\bin\Debug\HTTPupt.dll
 C:\Users\Macov\OneDrive - Universidad Politecnica de Tecamac\8voCuatri\Inteligencia Artificial\2\LogicaDifusaGraficaMicroCon\LogicaDifusaGra\obj\Debug\LogicaDifusaGra.csproj.CopyComplete
 C:\Users\Macov\OneDrive - Universidad Politecnica de Tecamac\8voCuatri\Inteligencia Artificial\2\LogicaDifusaGraficaMicroCon\LogicaDifusaGra\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Macov\OneDrive - Universidad Politecnica de Tecamac\8voCuatri\Inteligencia Artificial\2\LogicaDifusaGraficaMicroCon\LogicaDifusaGra\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Macov\OneDrive - Universidad Politecnica de Tecamac\8voCuatri\Inteligencia Artificial\2\LogicaDifusaGraficaMicroCon\LogicaDifusaGra\obj\Debug\LogicaDifusaGra.csproj.SuggestedBindingRedirects.cache
+C:\Users\Macov\OneDrive - Universidad Politecnica de Tecamac\8voCuatri\Inteligencia Artificial\2\LogicaDifusaGraficaMicroCon\LogicaDifusaGra\obj\Debug\LogicaDifusaGra.Form2.resources
