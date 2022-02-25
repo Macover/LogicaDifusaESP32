@@ -167,6 +167,7 @@ namespace LogicaDifusaGra
                 grafica.Series[4].Points.AddXY(x, 0);
             }
         }
+<<<<<<< HEAD
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -174,5 +175,7 @@ namespace LogicaDifusaGra
             consultarAPIESP();
             timer1.Start();
         }
+=======
+>>>>>>> d647956cf2bafb83170ba479a8ca840b3dbe7e62
     }
 }
