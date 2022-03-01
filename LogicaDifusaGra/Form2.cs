@@ -23,6 +23,8 @@ namespace LogicaDifusaGra
             logicaDifusas[1] = new logicaDifusa("Dia", 4, 12, 18);
             logicaDifusas[2] = new logicaDifusa("Noche", 15, 18);
 
+            
+
             for (int i = 0; i < 24; i++)
             {
                 double y = logicaDifusas[0].calcularFuncionHombro(i);
@@ -34,13 +36,67 @@ namespace LogicaDifusaGra
                 double y3 = logicaDifusas[2].calcularFuncionSaturacion(i);
                 grafica2.Series[2].Points.AddXY(i,y3);
             }
-            for (int i = 0; i < 3; i++)
+
+            matrizDifusa = new FAMDistancia[5, 3];
+
+            for (int fila = 0; fila < 3; fila++)
             {
-                for (int j = 0; j < 5; j++)
+                for (int columna = 0; columna < 4; columna++)
                 {
-                    matrizDifusa = new FAMDistancia[5, 3];
+                    matrizDifusa[columna,fila]= new FAMDistancia();
                 }
             }
+
+            /*Llenado de matriz */
+
+            // ------------------
+            //matrizDifusa[0, 0].ledIntensidad1 = "MEDIO";
+            //matrizDifusa[0, 0].ledIntensidad2= "BAJO";
+
+            //matrizDifusa[0, 1].ledIntensidad1 = "ALTO";
+            //matrizDifusa[0, 1].ledIntensidad2 = "BAJO";
+
+            //matrizDifusa[0, 2].ledIntensidad1 = "ALTO";
+            //matrizDifusa[0, 2].ledIntensidad2 = "MEDIO";
+
+            //matrizDifusa[0, 3].ledIntensidad1 = "MEDIO";
+            //matrizDifusa[0, 3].ledIntensidad2 = "ALTO";
+
+            //matrizDifusa[0, 4].ledIntensidad1 = "ALTO";
+            //matrizDifusa[0, 4].ledIntensidad2= "BAJO";
+
+            //// ------------------
+            //matrizDifusa[1, 0].ledIntensidad1 = "ALTO";
+            //matrizDifusa[1, 0].ledIntensidad2 = "MEDIO";
+
+            //matrizDifusa[1, 1].ledIntensidad1 = "BAJO";
+            //matrizDifusa[1, 1].ledIntensidad2 = "BAJO";
+
+            //matrizDifusa[1, 2].ledIntensidad1 = "ALTO";
+            //matrizDifusa[1, 2].ledIntensidad2 = "MEDIO";
+
+            //matrizDifusa[1, 3].ledIntensidad1 = "BAJO";
+            //matrizDifusa[1, 3].ledIntensidad2 = "ALTO";
+
+            //matrizDifusa[1, 4].ledIntensidad1 = "ALTO";
+            //matrizDifusa[1, 4].ledIntensidad2 = "BAJO";
+            //// ------------------
+            //matrizDifusa[2, 0].ledIntensidad1 = "ALTO";
+            //matrizDifusa[2, 0].ledIntensidad2 = "ALTO";
+
+            //matrizDifusa[2, 1].ledIntensidad1 = "ALTO";
+            //matrizDifusa[2, 1].ledIntensidad2 = "MEDIO";
+
+            //matrizDifusa[2, 2].ledIntensidad1 = "MEDIO";
+            //matrizDifusa[2, 2].ledIntensidad2 = "BAJO";
+
+            //matrizDifusa[2, 3].ledIntensidad1 = "MEDIO";
+            //matrizDifusa[2, 3].ledIntensidad2 = "MEDIO";
+
+            //matrizDifusa[2, 4].ledIntensidad1 = "ALTO";
+            //matrizDifusa[2, 4].ledIntensidad2 = "MEDIO";
+
+
 
 
         }

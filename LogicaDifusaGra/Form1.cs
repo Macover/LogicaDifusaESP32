@@ -29,7 +29,7 @@ namespace LogicaDifusaGra
             form = new Form2();
             form.Show();
 
-            hScrollBar1.Enabled = true;                   
+               
             btnGraficar.Enabled = false;
             btnActualizar.Enabled = true;
 
@@ -60,38 +60,38 @@ namespace LogicaDifusaGra
             }
         }
 
-        private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
-        {
-            double x = hScrollBar1.Value;
+        //private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        //{
+        //    double x = hScrollBar1.Value;
                         
-            double[] yA = new double[4];
+        //    double[] yA = new double[4];
 
-            grafica.Series[4].Color = Color.GreenYellow;
-            grafica.Series[4].Points.Clear();
+        //    grafica.Series[4].Color = Color.GreenYellow;
+        //    grafica.Series[4].Points.Clear();
 
-            for (int i = 0; i < 5; i++)
-            {
-                grafica.Series[4].Points.AddXY(x, 1.5);
-                grafica.Series[4].Points.AddXY(x, 0);
-            }
+        //    for (int i = 0; i < 5; i++)
+        //    {
+        //        grafica.Series[4].Points.AddXY(x, 1.5);
+        //        grafica.Series[4].Points.AddXY(x, 0);
+        //    }
             
-            yA[0] = valoresL[0].calcularFuncionHombro(x);
-            yA[1] = valoresL[1].calcularFuncionTriangular(x);
-            yA[2] = valoresL[2].calcularFuncionTriangular(x);
-            yA[3] = valoresL[3].calcularFuncionSaturacion(x);
+        //    yA[0] = valoresL[0].calcularFuncionHombro(x);
+        //    yA[1] = valoresL[1].calcularFuncionTriangular(x);
+        //    yA[2] = valoresL[2].calcularFuncionTriangular(x);
+        //    yA[3] = valoresL[3].calcularFuncionSaturacion(x);
 
 
-            double newX = yA.Max();
+        //    double newX = yA.Max();
 
-            grafica.Series[6].Points.Clear();
-            grafica.Series[6].Color = Color.GreenYellow;
-            grafica.Series[6].Points.AddXY(0, yA.Max());
-            grafica.Series[6].Points.AddXY(150, yA.Max());
+        //    grafica.Series[6].Points.Clear();
+        //    grafica.Series[6].Color = Color.GreenYellow;
+        //    grafica.Series[6].Points.AddXY(0, yA.Max());
+        //    grafica.Series[6].Points.AddXY(150, yA.Max());
 
-            lblValorLinguistico.Text = valoresL[yA.ToList().IndexOf(yA.Max())].valorLinguistico;
+        //    //lblValorLinguistico.Text = valoresL[yA.ToList().IndexOf(yA.Max())].valorLinguistico;
 
 
-        }
+        //}
 
         public void consultarAPIESP()
         {
@@ -126,6 +126,19 @@ namespace LogicaDifusaGra
                             grafica.Series[5].Points.Clear();
                             grafica.Series[5].Color = Color.MediumVioletRed;
 
+                            logicaDifusa[] valoresL1 = new logicaDifusa[4];
+                            valoresL1[0] = new logicaDifusa("muy cercas", 30, 40);
+                            valoresL1[1] = new logicaDifusa("cercas", 30, 60, 90);
+                            valoresL1[2] = new logicaDifusa("lejos", 80, 110, 140);
+                            valoresL1[3] = new logicaDifusa("muy lejos", 130, 140);
+
+                            double[] yA1 = new double[4];
+                            yA1[0] = valoresL1[0].calcularFuncionHombro(x);
+                            yA1[1] = valoresL1[1].calcularFuncionTriangular(x);
+                            yA1[2] = valoresL1[2].calcularFuncionTriangular(x);
+                            yA1[3] = valoresL1[3].calcularFuncionSaturacion(x);
+                            lblValorLinguistico.Text = valoresL1[yA1.ToList().IndexOf(yA1.Max())].valorLinguistico;
+
                             for (int i = 0; i < 5; i++)
                             {
                                 grafica.Series[5].Points.AddXY(x, 1.5);
@@ -152,21 +165,21 @@ namespace LogicaDifusaGra
             consultarAPIESP();
         }
 
-        private void hScrollBar2_Scroll(object sender, ScrollEventArgs e)
-        {
-            double x = hScrollBar1.Value;
+        //private void hScrollBar2_Scroll(object sender, ScrollEventArgs e)
+        //{
+        //    //double x = hScrollBar2.Value;
 
-            double[] yA = new double[4];
+        //    double[] yA = new double[4];
 
-            grafica.Series[4].Color = Color.GreenYellow;
-            grafica.Series[4].Points.Clear();
+        //    grafica.Series[4].Color = Color.GreenYellow;
+        //    grafica.Series[4].Points.Clear();
 
-            for (int i = 0; i < 5; i++)
-            {
-                grafica.Series[4].Points.AddXY(x, 1.5);
-                grafica.Series[4].Points.AddXY(x, 0);
-            }
-        }
+        //    for (int i = 0; i < 5; i++)
+        //    {
+        //        grafica.Series[4].Points.AddXY(x, 1.5);
+        //        grafica.Series[4].Points.AddXY(x, 0);
+        //    }
+        //}
 
         private void timer1_Tick(object sender, EventArgs e)
         {

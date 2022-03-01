@@ -8,7 +8,10 @@ namespace LogicaDifusaGra
 {
     internal class FAMDistancia
     {
-        public string actuador1 { get; set; }
-        public string actuador2 { get; set; }
+        //Led 1 intensidad del LED.
+        public string ledIntensidad1 { get; set; }
+
+        //Led 2 cambio de color. AZUL,ROJO,VERDE.
+        public string ledIntensidad2 { get; set; }
     }
 }
